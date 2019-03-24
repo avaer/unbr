@@ -18,7 +18,6 @@ const unbr = (srcPaths, dstPath) => {
     }
     const bytesRead = fs.readSync(fd, buf, i, count);
     if (bytesRead > 0) {
-      pos += bytesRead;
       return bytesRead;
     } else {
       fs.closeSync(fd);
